@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resume Agus</title>
+    <!--<script src="https://npmcdn.com/vue/dist/vue.js"></script> -->
+    <script src="/js/vue.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="left-side">
+            <!-- THIS IS THE LEFT SIDE OF THE RESUME -->
+            <div class="first-left">
+                <div>
+                    <h1>Agus Marsono</h1>
+                    <h4><span id="role">Front End Developer</span></h4>
+                </div>
+            </div>
+            <!-- THIS PART CONTAINS CANDIDATE INFORMATION LIKE ADDRESS, PHONE, EMAIL-->
+            <div class="second-left">
+                <div class="info">
+                    <!-- EMAIL -->
+                    <img src="images/cardicon.png" class="img-linkedin">
+                    <p style="color: white;" class="linkedin-text">Permanent resident</p>
+                </div>
+                <div class="info">
+                    <!-- EMAIL -->
+                    <img src="images/homeicon.png" class="img-email">
+                    <p style="color: white;"> Wakefield, MA 01880</p>
+                </div>
+                <div class="info">
+                    <!-- EMAIL -->
+                    <img src="images/email.png" class="img-email">
+                    <p style="color: white;">marsono.a2@gmail.com</p>
+                </div>
+                <div class="info">
+                    <!-- EMAIL -->
+                    <img src="images/phone.png" class="img-email">
+                    <p style="color: white;"> (857)318-9982</p>
+                </div>
+                <div class="info">
+                    <!-- EMAIL -->
+                    <img src="images/web.png" class="img-email">
+                    <a href="/portfolio" class="link-portfolio">
+                        <p style="color: white;">View portfolios (coming soon)</p>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- THIS PART CONTAINS CANDIDATE SKILLS-->
+            <div class="third-left">
+                <div class="focus">
+                    <p class="skill-base">Front End</p>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>HTML</p>
+                            <p>Advanced</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: html + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                        <!-- # END skill-graph -->
+                    </div>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>CSS</p>
+                            <p>Advanced</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: css + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                        <!-- # END skill-graph -->
+                    </div>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>SASS / SCSS</p>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: sass + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                        <!-- # END skill-graph -->
+                    </div>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Javascript</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: jsc + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                        <!-- # END skill-graph -->
+                    </div>
+                </div>
+                <!-- SKILLS SECTION 2 -->
+                <div class="focus">
+                    <p class="skill-base">Back End</p>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>NodeJs</p>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: node + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+
+                </div>
+                <!-- END ## SKILLS SECTION 2 -->
+                <!-- SKILLS SECTION 3 -->
+                <div class="focus">
+                    <p class="skill-base">Framework & Library</p>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Handlebars</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: handlebars + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>MeteorJs</p>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: meteor + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>ReactJs</p>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: react + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+                </div>
+                <!-- SKILL -->
+
+                <!-- SKILLS SECTION -->
+                <div class="focus">
+                    <p class="skill-base">CMS</p>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Squarespace</p>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: squarespace + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>WordPress</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: wordpress + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+                    <!-- SKILL -->
+
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Wix</p>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: wix + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END ## SKILLS SECTION 4 -->
+
+                <!-- SKILLS SECTION 5 -->
+                <div class="focus">
+                    <p class="skill-base">UX / UI</p>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Axure</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: axure + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Photoshop</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: photoshop + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                        <!-- # END skill-graph -->
+                    </div>
+                    <!-- END SKILL -->
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Balsamiq</p>
+                            <p>Intermediate</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: balsamiq + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                        <!-- # END skill-graph -->
+                    </div>
+                    <!-- END SKILL -->
+                </div>
+                <!-- END ## SKILLS SECTION 4 -->
+                <!-- SKILLS SECTION 4 -->
+                <div class="focus">
+                    <p class="skill-base">Digital Marketing</p>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>SEO Audit</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: seo + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Content Creation</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: cmarketing + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+                    <!-- SKILL -->
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>HTML Email</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: htmlemail + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+                </div>
+                <!-- END ## SKILLS SECTION 4 -->
+
+                <div class="focus">
+                    <p class="skill-base">More Tools</p>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>MS PowerPoint</p>
+                            <p>Advanced</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: powerpoint + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Google Sheet</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;"
+                                :style="{ width: gsheet + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+                    <!-- SKILL -->
+                    <!-- SKILL -->
+                    <div class="skill">
+                        <div class="skill-info">
+                            <p>Google Forms</p>
+                            <p>Proficient</p>
+                        </div>
+                        <div class="skill-graph">
+                            <div class="skill-graph" style="background-color:limegreen;" :style="{ width: gform + '%'}">
+                            </div>
+                            <!-- # END skill-graph -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END ## THIRD LEFT-->
+        </div>
+
+        <div class="right-side">
+            <!-- THIS IS THE RIGHT SIDE OF THE RESUME -->
+            <div class="right-side-header">
+                <p>Part of the solution to reach your business goals</p>
+            </div>
+            <div class="right-side-content">
+                <!-- THIS IS THE RIGHT SIDE TOP OF THE RESUME -->
+                <div class="content-section">
+                    <div class="trapezoid">
+                        <h3>Experience</h3>
+                    </div>
+                    <hr>
+                    <!-- Experience 1 -->
+                    <div class="experience-section">
+                        <div>
+                            <p><strong>Marketing, PR, and Engagement</strong></p>
+                            <p>October 2019 to June 2020</p>
+                            <p><strong>Corentus Inc.</strong> - Lexington, MA</p>
+                        </div>
+                        <div class="details">
+                            <ul>
+                                <li>
+                                    <p>Designed, developed, and delivered elements of the product launch process
+                                        including product development, beta-testing, and execution of go-to-market plan.
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Worked closely with Lead Designer and reported to C-level executive in building
+                                        elements of product launch.</p>
+                                </li>
+                                <li>
+                                    <p>Led e-learning initiative by systemizing new processes around the changes
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Managed, and updated the company website and e-learning platform.</p>
+                                </li>
+                                <li>
+                                    <p>Utilized tools (Photoshop, PowerPoint and Jquery) to design and build
+                                        mock-ups, certificates, email campaigns, promotional materials, and social media
+                                        content</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END OF Experience 1 -->
+
+                    <!-- START Experience 2 -->
+                    <div class="experience-section">
+                        <div>
+                            <p><strong>Digital Marketing Intern</strong></p>
+                            <p>September 2018 to June 2019</p>
+                            <p><strong>CareerMaker Executive Search</strong> - Boston, MA</p>
+                        </div>
+
+                        <div class="details">
+                            <ul>
+                                <li>
+                                    <p>Employed the Funnel Marketing strategy to build company website from scratch
+                                        using
+                                        Wordpress, HTML, CSS, and Javascript
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Created marketing content on the website that may attract new clients</p>
+                                </li>
+                                <li>
+                                    <p>Built online visibility and drove website traffic using Search Engine
+                                        Optimization (SEO).
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>Brainstormed and discussed potential business expansion ideas.</p>
+                                </li>
+                                <li>
+                                    <p>Conduct competitor analysis and research what may be applied to
+                                        the company</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END OF Experience 2 -->
+
+                    <!-- START Experience 3 -->
+                    <div class="experience-section">
+                        <div>
+                            <p><strong>Teaching Assistant of Programming Foundation Course</strong></p>
+                            <p>September 2014 to December 2016</p>
+                            <p><strong>Northeastern University, College of Professional Studies</strong> - Boston, MA
+                            </p>
+                        </div>
+
+                        <div class="details">
+                            <ul>
+                                <li>
+                                    <p>Provided support and oversight in the classroom alongside primary teacher to help
+                                        ensure safety and quality learning for all students.</p>
+                                </li>
+                                <li>
+                                    <p>Provided supplementary lessons and in-class assistances to students, mainly
+                                        checking
+                                        codes, and fixing errors.</p>
+                                </li>
+                                <li>
+                                    <p>Developed supplementary materials including online videos and quizzes to
+                                        shorten the learning curve.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END OF Experience 3 -->
+
+                    <!-- START Achievement -->
+                    <div class="content-section">
+                        <div class="trapezoid">
+                            <h3>Achievement</h3>
+                        </div>
+                        <hr>
+                        <!-- Achievement List -->
+                        <div class="achievement-section">
+                            <div class="details">
+                                <ul>
+                                    <li>
+                                        <p> Improved interactive experience of e-learning users by creating &
+                                            embedding HTML emails into the
+                                            e-learning platform.</p>
+                                    </li>
+                                    <li>
+                                        <p>Successfully devised a modular approach for the company to sell its products
+                                            and
+                                            services
+                                            online.</p>
+                                    </li>
+                                    <li>
+                                        <p>Taught a total over 150 graducate students in a programming course during 2
+                                            year
+                                            period
+                                            as a teaching assistant.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- END OF Achievement -->
+                    </div>
+
+                    <!-- Start Additional Skills -->
+                    <div class="content-section">
+                        <div class="trapezoid">
+                            <h3>Additional Skills</h3>
+                        </div>
+                        <hr>
+                        <p>
+                            Soft: Project management, teamwork & team development, knowledge transfer,
+                            problem-solving
+                        </p>
+                        <p>
+                            Technical: SEO & SMO, Web Content Management, webpage markup, audio & video editing
+                        </p>
+                    </div>
+                    <div class="content-section">
+                        <div class="trapezoid">
+                            <h3>Education</h3>
+                        </div>
+                        <hr>
+                        <!-- Education 1 -->
+                        <div class="education-section">
+                            <div>
+                                <p>Master of Professional Studies: Digital Media, concentration: Usability & Interactive
+                                    Design</p>
+                                <p>Master of Science: Leadership, concentration: Project Management</p>
+                                <p><strong>Northeastern University, College of Professional Studies</strong> - Boston,
+                                    MA</p>
+                            </div>
+                        </div>
+                        <!-- END OF Education -->
+                    </div>
+                    <!-- END OF THE SECTION-->
+                    <div class="content-section">
+                        <div class="trapezoid">
+                            <h3>Certification</h3>
+                        </div>
+                        <hr>
+                        <!-- Education 1 -->
+                        <div class="education-section">
+                            <div>
+                                <p>Sales & Marketing Professional</p>
+                                <p>Small Business Administration</p>
+                                <p><strong>Computer System Institute</strong> - Charlestown,
+                                    MA</p>
+                            </div>
+                        </div>
+                        <!-- END OF Education -->
+                    </div>
+                    <!-- END OF THE SECTION-->
+
+                    <div class="footer">
+                        <div class="social">
+                            <a href="https://www.linkedin.com/in/agus-marsono-b3943129/" class="view-linkedin"><img
+                                    src="/images/linkedin.png" alt="view linkedin page"><span class="tooltiptext1">view
+                                    linkedin</span></a>
+                            <a href="" class="view-git"><img src="/images/git_icon2.png" alt="view github page"><span
+                                    class="tooltiptext2">view github</span></a>
+                            <a href="/files/AgusResume.pdf" class="view-direction"
+                                style="text-decoration: none; color: white;" download alt="download resume"><img
+                                    src="/images/download_icon.png" alt=""><span class="tooltiptext">download
+                                    resume</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <hr>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>
